@@ -46,7 +46,8 @@ nav img {
     z-index: 1;
 }
 
-nav button, select{
+nav button,
+select {
     position: relative;
     z-index: 1;
 }
@@ -83,25 +84,26 @@ nav button, select{
 }
 
 .text h3 {
-    font-family: sans-serif;  
+    font-family: sans-serif;
     font-weight: 0;
     font-style: normal;
     font-size: .75rem;
     text-align: center;
 }
 
-.email{
+.email {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 600px;
     margin-bottom: 5px;
 }
+
 .email input {
     background: rgba(0, 0, 0, 0.196);
     border: 1px solid gray;
-    font-size: .9rem;  
-    font-weight: 700;  
+    font-size: .9rem;
+    font-weight: 700;
     padding: 1.0rem 1rem 0.6rem;
     width: 400px;
     height: 1.5em;
@@ -111,19 +113,23 @@ nav button, select{
 .curve {
     width: 100%;
     height: 5px;
-    border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-top-left-radius: 50% 100%; border-top-right-radius: 50% 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
     background-image: linear-gradient(to right, rgb(33, 13, 22) 16%, rgb(184, 40, 105), rgb(229, 9, 20), rgb(184, 40, 105), rgb(33, 13, 22) 84%);
-    
+
 }
 
-.btn{
+.btn {
     padding: 4px 16px;
     font-weight: bold;
     color: white;
     display: inline-flex;
     border-radius: 4px;
 }
-select{
+
+select {
     padding: 4px 6px;
     font-weight: bold;
     color: white;
@@ -134,17 +140,17 @@ select{
     border: 2px solid rgb(83, 83, 83);
 }
 
-.red-si{
+.red-si {
     background-color: rgb(229, 9, 20);
     cursor: pointer;
     border: 0;
 }
 
-.red-si:hover{
+.red-si:hover {
     background-color: rgb(203, 9, 18);
 }
 
-.red-gs{
+.red-gs {
     background-color: rgb(229, 9, 20);
     font-size: 20px;
     border: 0;
@@ -152,7 +158,90 @@ select{
     align-items: center;
 }
 
-.red-gs:hover{
+.red-gs:hover {
     background-color: rgb(203, 9, 18);
 }
 
+.faq {
+    color: white;
+    margin-top: 50px;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 280px;
+}
+
+.faqbox {
+    transition: all 0.2s ease-in-out;
+    background-color: #2d2d2d;
+    width: 72%;
+    height: 30px;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 18px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+}
+
+.below {
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 35px;
+    margin-left: 280px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.below span{
+    margin-bottom: 50px;
+}
+
+a{
+    color:rgba(255, 255, 255, 0.7);
+}
+
+.links {
+    color:rgba(255, 255, 255, 0.7);
+    width: 75%;
+    height: 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 35px;
+}
+
+.links a:active{
+    color: red;
+}
+
+.langbelow{
+    margin-top: 55px;
+}
+
+.name{
+    margin: 30px 0px;
+    font-size: 11px;
+    font-weight: 150;
+    color: rgba(255, 255, 255, 0.7);;
+}
+
+.learnmore{
+    margin-bottom: 100px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);;
+}
+
+.learnmore span{
+    color: rgb(68, 142, 244);
+    text-decoration: underline;
+}
