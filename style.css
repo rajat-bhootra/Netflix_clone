@@ -1,247 +1,376 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 .bg {
-    background-image: url(assets/image/background.jpg);
-    /* background-position: center center; */
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: max(1200px, 100vw);
-    height: 96vh;
-    position: relative;
-    box-shadow: 0px 0px 20px 20px black inset;
+  background-image: url(assets/image/background.jpg);
+  /* background-position: center center; */
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 96vh;
+  position: relative;
+  box-shadow: 0px 0px 20px 20px black inset;
 
 }
 
 .bg .box {
-    background-color: black;
-    width: 100%;
-    height: 96vh;
-    opacity: 0.7;
-    position: absolute;
-    top: 0;
+  background-color: black;
+  width: 100%;
+  height: 96vh;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
 
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 65vw;
-    margin: auto;
-    height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 65vw;
+  margin: auto;
+  height: 88px;
 }
 
 nav img {
-    position: relative;
-    height: 32px;
-    z-index: 1;
+  position: relative;
+  height: 32px;
+  z-index: 1;
 }
 
 nav button,
 select {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .text {
-    height: calc(100% - 88px);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    gap: 23px;
-    overflow: auto;
+  height: calc(100% - 88px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 23px;
+  overflow: auto;
 }
 
 .text h1 {
-    font-family: "Martel Sans", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    max-width: 700px;
-    display: block;
-    text-align: center;
-    font-size: 3rem;
-    line-height: 125%;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  max-width: 700px;
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 125%;
 }
 
 .text span {
-    font-family: "Martel Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 0.9rem;
-    text-align: center;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 .text h3 {
-    font-family: sans-serif;
-    font-weight: 0;
-    font-style: normal;
-    font-size: .75rem;
-    text-align: center;
+  font-family: sans-serif;
+  font-weight: 0;
+  font-style: normal;
+  font-size: .75rem;
+  text-align: center;
 }
 
 .email {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 600px;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+  margin-bottom: 5px;
 }
 
 .email input {
-    background: rgba(0, 0, 0, 0.196);
-    border: 1px solid gray;
-    font-size: .9rem;
-    font-weight: 700;
-    padding: 1.0rem 1rem 0.6rem;
-    width: 400px;
-    height: 1.5em;
-    border-radius: 4px;
+  background: rgba(0, 0, 0, 0.196);
+  border: 1px solid gray;
+  font-size: .9rem;
+  font-weight: 700;
+  padding: 1.0rem 1rem 0.6rem;
+  width: 400px;
+  height: 1.5em;
+  border-radius: 4px;
 }
 
 .curve {
-    width: 100%;
-    height: 5px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-    background-image: linear-gradient(to right, rgb(33, 13, 22) 16%, rgb(184, 40, 105), rgb(229, 9, 20), rgb(184, 40, 105), rgb(33, 13, 22) 84%);
+  width: 100%;
+  height: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  background-image: linear-gradient(to right, rgb(33, 13, 22) 16%, rgb(184, 40, 105), rgb(229, 9, 20), rgb(184, 40, 105), rgb(33, 13, 22) 84%);
 
 }
 
 .btn {
-    padding: 4px 16px;
-    font-weight: bold;
-    color: white;
-    display: inline-flex;
-    border-radius: 4px;
+  padding: 4px 16px;
+  font-weight: bold;
+  color: white;
+  display: inline-flex;
+  border-radius: 4px;
 }
 
 select {
-    padding: 4px 6px;
-    font-weight: bold;
-    color: white;
-    display: inline-flex;
-    border-radius: 2px;
-    font-size: 12px;
-    background-color: rgba(255, 255, 255, 0.133);
-    border: 2px solid rgb(83, 83, 83);
+  padding: 4px 6px;
+  font-weight: bold;
+  color: white;
+  display: inline-flex;
+  border-radius: 2px;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.133);
+  border: 2px solid rgb(83, 83, 83);
 }
 
 .red-si {
-    background-color: rgb(229, 9, 20);
-    cursor: pointer;
-    border: 0;
+  background-color: rgb(229, 9, 20);
+  cursor: pointer;
+  border: 0;
 }
 
 .red-si:hover {
-    background-color: rgb(203, 9, 18);
+  background-color: rgb(203, 9, 18);
 }
 
 .red-gs {
-    background-color: rgb(229, 9, 20);
-    font-size: 20px;
-    border: 0;
-    height: 50px;
-    align-items: center;
+  background-color: rgb(229, 9, 20);
+  font-size: 20px;
+  border: 0;
+  height: 50px;
+  align-items: center;
 }
 
 .red-gs:hover {
-    background-color: rgb(203, 9, 18);
+  background-color: rgb(203, 9, 18);
 }
 
+.trending {
+  padding: 40px 60px;
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  margin-left: 250px;
+  margin-top: 15px;
+  width: 60vw;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+.row::-webkit-scrollbar {
+  display: none;
+}
+
+.row img {
+  height: 250px;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.row img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+
+.reasons {
+  background: black;
+  color: white;
+  padding: 60px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.reason {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.reason.reverse {
+  flex-direction: row-reverse;
+}
+
+.reason .text {
+  flex: 1;
+}
+
+.reason img {
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+}
+
+.card {
+  background: radial-gradient(circle at top left, #313365b0, #120012);
+  border-radius: 16px;
+  color: white;
+  padding: 20px;
+  width: 320px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  font-family: 'Martel Sans', sans-serif;
+  margin: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.card .icon {
+  align-self: flex-end;
+}
+
+.card .icon svg {
+  width: 64px;
+  height: 64px;
+}
+
+
 .faq {
-    color: white;
-    margin-top: 50px;
-    font-family: "Martel Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    margin-left: 280px;
+  color: white;
+  margin-top: 50px;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 280px;
 }
 
 .faqbox {
-    transition: all 0.2s ease-in-out;
-    background-color: #2d2d2d;
-    width: 72%;
-    height: 30px;
-    font-family: sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    padding: 18px 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
-    cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: #2d2d2d;
+  width: 72%;
+  height: 30px;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .faqbox:hover {
-    background-color: #414141;
+  background-color: #414141;
 }
 
 .below {
-    color: rgba(255, 255, 255, 0.7);
-    margin-top: 35px;
-    margin-left: 280px;
-    margin-bottom: 50px;
-    font-family: sans-serif;
-    font-size: 14px;
-    font-weight: 100;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 35px;
+  margin-left: 280px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 100;
 }
 
-.below span{
-    margin-bottom: 50px;
+.below span {
+  margin-bottom: 50px;
 }
 
-a{
-    color:rgba(255, 255, 255, 0.7);
+a {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .links {
-    color:rgba(255, 255, 255, 0.7);
-    width: 75%;
-    height: 110px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-size: 12px;
-    font-family: sans-serif;
-    margin-top: 35px;
+  color: rgba(255, 255, 255, 0.7);
+  width: 75%;
+  height: 110px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 12px;
+  font-family: sans-serif;
+  margin-top: 35px;
 }
 
-.links a:active{
-    color: red;
+.links a:active {
+  color: red;
 }
 
-.langbelow{
-    margin-top: 55px;
+.langbelow {
+  margin-top: 55px;
 }
 
-.name{
-    margin: 30px 0px;
-    font-size: 11px;
-    font-weight: 150;
-    color: rgba(255, 255, 255, 0.7);;
+.name {
+  margin: 30px 0px;
+  font-size: 11px;
+  font-weight: 150;
+  color: rgba(255, 255, 255, 0.7);
+  ;
 }
 
-.learnmore{
-    margin-bottom: 100px;
-    font-size: 11px;
-    color: rgba(255, 255, 255, 0.5);;
+.learnmore {
+  margin-bottom: 100px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  ;
 }
 
-.learnmore span{
-    color: rgb(68, 142, 244);
-    text-decoration: underline;
+.learnmore span {
+  color: rgb(68, 142, 244);
+  text-decoration: underline;
 }
