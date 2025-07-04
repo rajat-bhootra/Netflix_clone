@@ -10,13 +10,13 @@ body {
 }
 
 .bg {
-  background-image: url(assets/image/background.jpg);
-  /* background-position: center center; */
-  object-fit: cover;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/05e91faa-6f6d-4325-934e-5418dcc2567b/web/IN-en-20250630-TRIFECTA-perspective_159086b1-425f-435b-bcd5-1ed8039cdef9_large.jpg);
+  object-fit:cover;
   background-repeat: no-repeat;
   background-size: max(1200px, 100vw);
   height: 96vh;
-  position: relative;
+  position: relative; 
+  top: 0;
   box-shadow: 0px 0px 20px 20px black inset;
 
 }
@@ -97,16 +97,17 @@ select {
   align-items: center;
   width: 600px;
   margin-bottom: 5px;
+
 }
 
 .email input {
-  background: rgba(0, 0, 0, 0.196);
+  background: rgba(54, 54, 54, 0.342);
   border: 1px solid gray;
   font-size: .9rem;
   font-weight: 700;
   padding: 1.0rem 1rem 0.6rem;
-  width: 400px;
-  height: 1.5em;
+  width: 375px;
+  height: 18px;
   border-radius: 4px;
 }
 
@@ -122,8 +123,8 @@ select {
 }
 
 .btn {
-  padding: 4px 16px;
-  font-weight: bold;
+  padding: 4px 8px;
+  font-weight:bold;
   color: white;
   display: inline-flex;
   border-radius: 4px;
@@ -144,6 +145,7 @@ select {
   background-color: rgb(229, 9, 20);
   cursor: pointer;
   border: 0;
+  margin-left: 5px;
 }
 
 .red-si:hover {
@@ -154,8 +156,13 @@ select {
   background-color: rgb(229, 9, 20);
   font-size: 20px;
   border: 0;
-  height: 50px;
+  height: 45px;
   align-items: center;
+  padding: 0px 15px;
+}
+
+.red-gs img{
+      margin-left: 2.5px;
 }
 
 .red-gs:hover {
@@ -163,17 +170,17 @@ select {
 }
 
 .trending {
-  padding: 40px 60px;
   color: white;
   font-family: "Martel Sans", sans-serif;
-  margin-left: 250px;
-  margin-top: 15px;
-  width: 60vw;
+  margin: 35px auto;
+  width: 900px;
 }
 
 .slider-container {
   position: relative;
   overflow: hidden;
+  width: 800px;
+  margin: 0px auto;
 }
 
 .row {
@@ -223,20 +230,21 @@ select {
 
 
 .reasons {
-  background: black;
+  background: rgb(0, 0, 0);
   color: white;
-  padding: 60px 10%;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+  height: 290px;
+  width: 900px;
+  margin: 0px auto;
+  font-family: 'Martel Sans', sans-serif;
+  margin-bottom: 100px;
 }
 
 .reason {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 .reason.reverse {
@@ -244,7 +252,7 @@ select {
 }
 
 .reason .text {
-  flex: 1;
+  flex:1;
 }
 
 .reason img {
@@ -258,14 +266,14 @@ select {
   border-radius: 16px;
   color: white;
   padding: 20px;
-  width: 320px;
-  height: 280px;
+  padding-bottom: 0;
+  width: 175px;
+  height: 270px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  font-family: 'Martel Sans', sans-serif;
-  margin: 20px;
+  font-family:  sans-serif;
 }
 
 .card h3 {
@@ -276,6 +284,7 @@ select {
 .card p {
   font-size: 14px;
   line-height: 1.4;
+  font-weight: lighter;
   color: rgba(255, 255, 255, 0.85);
 }
 
@@ -288,20 +297,21 @@ select {
   height: 64px;
 }
 
-
 .faq {
   color: white;
-  margin-top: 50px;
   font-family: "Martel Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  margin-left: 280px;
+  margin: 0px auto;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
 }
 
 .faqbox {
   transition: all 0.2s ease-in-out;
   background-color: #2d2d2d;
-  width: 72%;
+  width: 95%;
   height: 30px;
   font-family: sans-serif;
   font-weight: 300;
@@ -310,7 +320,7 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
+  margin: 2px auto;
   cursor: pointer;
 }
 
@@ -318,11 +328,25 @@ select {
   background-color: #414141;
 }
 
+.belowemail{
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  height:200px;
+  width: 900px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
 .below {
   color: rgba(255, 255, 255, 0.7);
-  margin-top: 35px;
-  margin-left: 280px;
-  margin-bottom: 50px;
+  margin: 0px auto;
+  width: 900px;
   font-family: sans-serif;
   font-size: 14px;
   font-weight: 100;
@@ -373,4 +397,93 @@ a {
 .learnmore span {
   color: rgb(68, 142, 244);
   text-decoration: underline;
+}
+
+
+
+
+
+
+
+@media (max-width: 960px) {
+  nav {
+    max-width: 90vw;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .email {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .email input {
+    width: 100%;
+  }
+
+  .red-gs {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .trending,
+  .reasons,
+  .faq,
+  .belowemail,
+  .below {
+    width: 90vw;
+  }
+
+  .slider-container {
+    width: 100%;
+  }
+
+  .reason {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .links {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .text h1 {
+    font-size: 2rem;
+  }
+
+  .text h3,
+  .text span {
+    font-size: 0.8rem;
+  }
+
+  .row img {
+    height: 160px;
+  }
+
+  .reason {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .faqbox {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .links {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .belowemail {
+    font-size: 10px;
+  }
 }
