@@ -11,11 +11,11 @@
 
   .bg {
     background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/05e91faa-6f6d-4325-934e-5418dcc2567b/web/IN-en-20250630-TRIFECTA-perspective_159086b1-425f-435b-bcd5-1ed8039cdef9_large.jpg);
-    object-fit:cover;
+    object-fit: cover;
     background-repeat: no-repeat;
     background-size: max(1200px, 100vw);
     height: 96vh;
-    position: relative; 
+    position: relative;
     top: 0;
     box-shadow: 0px 0px 20px 20px black inset;
 
@@ -60,7 +60,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    gap: 23px;
+    gap: 20px;
     overflow: auto;
   }
 
@@ -68,7 +68,7 @@
     font-family: "Martel Sans", sans-serif;
     font-weight: 900;
     font-style: normal;
-    max-width: 700px;
+    width: 700px;
     display: block;
     text-align: center;
     font-size: 3rem;
@@ -101,11 +101,11 @@
   }
 
   .email input {
-    background: rgba(54, 54, 54, 0.342);
+    background: rgba(25, 25, 25, 0.819);
     border: 1px solid gray;
     font-size: .9rem;
     font-weight: 700;
-    padding: 1.0rem 1rem 0.6rem;
+    padding: 0.8rem 1rem 0.6rem;
     width: 375px;
     height: 18px;
     border-radius: 4px;
@@ -114,6 +114,8 @@
   .curve {
     width: 100%;
     height: 5px;
+    position: absolute;
+    bottom: 0;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border-top-left-radius: 50% 100%;
@@ -124,7 +126,7 @@
 
   .btn {
     padding: 4px 8px;
-    font-weight:bold;
+    font-weight: bold;
     color: white;
     display: inline-flex;
     border-radius: 4px;
@@ -145,6 +147,7 @@
     background-color: rgb(229, 9, 20);
     cursor: pointer;
     border: 0;
+    text-align: center;
     margin-left: 5px;
   }
 
@@ -161,8 +164,8 @@
     padding: 0px 15px;
   }
 
-  .red-gs img{
-        margin-left: 2.5px;
+  .red-gs img {
+    margin-left: 2.5px;
   }
 
   .red-gs:hover {
@@ -226,7 +229,7 @@
   }
 
   .arrow.left {
-    left:-30px;
+    left: -30px;
   }
 
   .arrow.right {
@@ -256,7 +259,7 @@
   }
 
   .reason .text {
-    flex:1;
+    flex: 1;
   }
 
   .reason img {
@@ -277,7 +280,7 @@
     flex-direction: column;
     justify-content: space-around;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    font-family:  sans-serif;
+    font-family: sans-serif;
   }
 
   .card h3 {
@@ -332,12 +335,12 @@
     background-color: #414141;
   }
 
-  .belowemail{
+  .belowemail {
     color: white;
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 12px;
-    height:200px;
+    height: 200px;
     width: 950px;
     margin: 0px auto;
     display: flex;
@@ -455,39 +458,156 @@
   }
 
   @media (max-width: 600px) {
+    nav {
+      max-width: 90vw;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav img {
+      height: 25px;
+      z-index: 1;
+    }
+
+    .bg {
+      height: 70vh;
+    }
+
+    .text {
+      justify-content: flex-start;
+      padding-top: 75px;
+      gap: 10px;
+    }
+
     .text h1 {
       font-size: 2rem;
+      width: 350px;
     }
 
     .text h3,
     .text span {
-      font-size: 0.8rem;
+      font-size: 1rem;
+      width: 320px;
+      font-weight: 500;
     }
 
+    .email {
+      margin-top: 10px;
+    }
+
+    .email input {
+      width: 270px;
+      height: 30px;
+    }
+
+    .lang {
+      width: 60px;
+      height: 35px;
+    }
+
+    .red-si {
+      width: 70px;
+      height: 35px;
+      padding: 10px 10px 10px 12px;
+      font-size: 15px;
+    }
+
+    .red-gs {
+      width: 160px;
+      height: 55px;
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    .trending{
+      margin-top: 60px auto;
+    }
+    .trending h2 {
+      font-size: 17px;
+    }
+
+    .slider-container{
+      width: 290px;
+    }
+
+    .row{
+      gap: 18px;
+    }
     .row img {
       height: 160px;
     }
 
+    .arrow.left{
+      left: -5px;
+    }
+
+    .arrow.right{
+      right: -5px;
+    }
+
+    .reasons{
+      margin-bottom: 640px;
+    }
+    .reasons h2{
+      font-size: 17px;
+    }
     .reason {
       grid-template-columns: 1fr;
+      gap: 10px;
     }
 
     .card {
-      width: 100%;
-      height: auto;
+      width: 85%;
+      height: 22vh;
     }
 
-    .faqbox {
+    .card h3{
+      font-size: 20px;
+    }
+
+    .card p{
       font-size: 16px;
+      font-weight: 300;
+    }
+
+    .faq h2{
+      font-size: 17px;
+    }
+    .faqbox {
+      font-size: 18px;
+      height: 40px;
+      width: 85%;
+      font-weight: 400;
       padding: 12px 16px;
     }
 
     .links {
       grid-template-columns: 1fr;
+      gap: 15px;
+      font-size: 16px;
       text-align: left;
+      margin-bottom: 450px;
+      padding-left: 10px;
     }
 
     .belowemail {
-      font-size: 10px;
+      margin-top: 60px;
+      font-size: 17px;
+      font-weight:lighter;
+      margin-bottom: 60px;
     }
+
+    .below{
+      margin: 20px;
+      font-weight: 400;
+      margin-bottom: 200px;
+    }
+
+    .name{
+      font-size: 12px;
+      color: white;
+      font-weight: 300;
+    }
+
   }
